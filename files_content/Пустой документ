@@ -1,0 +1,11 @@
+
+<Files "wp-login.php">
+	AuthType Basic
+	AuthName "please use your control panel password"
+	AuthUserFile /var/www/u0084543/data/etc/users
+	Require valid-user
+</Files>
+
+
+
+62Ywa)yGnMWCMYFqcddPDqVZ

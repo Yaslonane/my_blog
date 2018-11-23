@@ -1,0 +1,22 @@
+sudo apt install php-imagick (sudo apt install php7.0-imagick)
+sudo apt install php-gd (sudo apt install php7.0-gd)
+sudo apt install php-mbstring (sudo apt install php7.0-mbstring)
+
+systemctl restart apache2.service
+
+права на всё 0755 0777 (по ситуации)
+
+
+это все плюсом к официальному ману
+
+
+
+http://webguruz.ru/web-developer/ckfinder_in_ckeditor_config/
+
+
+https://kcfinder.sunhater.com/demos/textbox
+https://kcfinder.sunhater.com/integrate
+
+
+
+https://webformyself.com/fajlovyj-menedzher-kcfinder/
