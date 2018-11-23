@@ -20,7 +20,7 @@ public function actionIndex(){
         
         self::checkAdmin();
         
-       // $servicesList = Services::getAllServicesAdmin();
+        //$servicesList = Services::getAllServicesAdmin();
         
         
         //$servicesDesc = info::getInfo();
@@ -36,7 +36,7 @@ public function actionIndex(){
         
     }
     
-    public function actionUpdateprice(){
+    public function actionUpdateprice(){ //обновление из модального окна 
         
         self::checkAdmin();
         
@@ -46,12 +46,12 @@ public function actionIndex(){
             //var_dump($_SESSION);
             //var_dump($_POST);
             //var_dump($_FILES);
-            header ('Location: '.DOMAIN .'/adminpanel/services');
+            header ('Location: '.DOMAIN .'/adminpanel/prices');
         }else return false;
         
     }
     
-    public function actionUpdateInfoPrices(){
+    public function actionUpdateInfoPrices(){ //обновление основной информации о ценах
         
         self::checkAdmin();
         
@@ -61,12 +61,12 @@ public function actionIndex(){
             //var_dump($_SESSION);
             //var_dump($_POST);
             //var_dump($_FILES);
-            header ('Location: '.DOMAIN .'/adminpanel/services');
+            header ('Location: '.DOMAIN .'/adminpanel/prices');
         }else return false;
         
     }
     
-    public function actionCreateprice(){
+    public function actionCreateprice(){ // создангие новой карточки цены
         
         self::checkAdmin();
         
@@ -77,12 +77,12 @@ public function actionIndex(){
             //var_dump($_POST);
             //var_dump($_FILES);
             //var_dump($id);
-            header ('Location: '.DOMAIN .'/adminpanel/updateservices/'.$id);
+            header ('Location: '.DOMAIN .'/adminpanel/updateprices/'.$id);
         }
         
     }
     
-    public function actionDelprice($id){
+    public function actionDelprice($id){ //удаление карточки цены
         
         self::checkAdmin();
 
@@ -92,11 +92,11 @@ public function actionIndex(){
             //var_dump($_FILES);
             //var_dump($id);
         if($del){
-            header ('Location: '.DOMAIN .'/adminpanel/services'); 
+            header ('Location: '.DOMAIN .'/adminpanel/prices'); 
         }
     }
     
-    public function actionPublicprice($id){
+    public function actionPublicprice($id){  // снятие\постановка публикации карточки
         
         self::checkAdmin();
 
@@ -106,7 +106,7 @@ public function actionIndex(){
             //var_dump($_FILES);
             //var_dump($id);
         if($pub){
-            header ('Location: '.DOMAIN .'/adminpanel/services'); 
+            header ('Location: '.DOMAIN .'/adminpanel/prices'); 
         }
     }
 }
